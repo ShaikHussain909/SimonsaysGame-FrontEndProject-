@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--  Top-right controls -->
+    <div id="top-controls">
+        <button id="start-btn">Start</button>
+        <button id="sound-toggle">🔊 Sound: ON</button>
+    </div>
+
+    <h1>Simon Says Game</h1>
+    <h2>Press "Start" to begin</h2>
+    <h3></h3>
+
+    <div id="progressBar"></div>
+
+    <div class="btn-container">
+        <div class="line-one">
+            <div class="btn red" id="red"></div>
+            <div class="btn yellow" id="yellow"></div>
+        </div>
+        <div class="line-two">
+            <div class="btn grey" id="grey"></div>
+            <div class="btn purple" id="purple"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

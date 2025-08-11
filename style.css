@@ -1,0 +1,115 @@
+body {
+    text-align: center;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#top-controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+#top-controls button {
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+}
+
+#top-controls button:hover {
+    background-color: #0056b3;
+}
+
+.btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 2.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line-one, .line-two {
+    display: flex;
+    justify-content: center;
+}
+
+.red {
+    background-color: rgb(198, 79, 79);
+}
+
+.yellow {
+    background-color: yellowgreen;
+}
+
+.grey {
+    background-color: hotpink;
+}
+
+.purple {
+    background-color: rgb(167, 78, 167);
+}
+
+.flashBtn {
+    background-color: white;
+}
+
+.userFlash {
+    background-color: aquamarine;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+#progressBar {
+    height: 10px;
+    background-color: rgb(182, 235, 76);
+    width: 0%;
+    transition: width 0.3s ease;
+    margin: 10px auto;
+}
+
+.game-over {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+@media (max-width: 600px) {
+    .btn {
+        height: 100px;
+        width: 100px;
+        margin: 1rem;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
